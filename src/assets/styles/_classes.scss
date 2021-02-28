@@ -29,9 +29,41 @@
         background: white;
         color: var(--errors);
     }
+    &-dark{
+        background: var(--dark);
+    }
 }
 .text{
     &-error{
         color: var(--errors);
     }
+}
+.navbar-toggler{
+    transform: translateY(60px);
+    background: var(--dark);
+    margin-bottom: 2rem;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    align-self: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem 1rem;
+    height: 80px;
+    border-radius: 50%;
+}
+.show{
+    display: flex;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.align{
+    // align-items: flex-start;
+}
+.navbar {
+   
+    box-sizing: content-box;
+
+
 }

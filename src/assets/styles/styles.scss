@@ -19,6 +19,36 @@
  
 }
 header {
+  @include sm{
+    ul{
+     display: flex;
+     flex-direction: column;
+     box-sizing: content-box;
+     height: 80px;
+   
+     
+      
+      li{
+        display: none;
+       a{
+         letter-spacing: 0.2rem;
+       }
+      }
+     
+    }
+    .btn{
+      margin-left: auto;
+      padding: 1rem;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    }
+    .btn img{
+     
+      height: 50px;
+      
+    }
+  }
   grid-area: header;
   padding: 20px;
   background: var(--dark);
@@ -47,6 +77,20 @@ header {
       }
     }
   }
+  @include md {
+    button{
+      display: none;
+    }
+  }@include lg{
+    button{
+      display: none;
+    }
+  }@include xl{
+    button{
+      display: none;
+    }
+  }
+ 
 }
 .content {
   grid-area: content;
